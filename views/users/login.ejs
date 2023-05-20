@@ -1,0 +1,35 @@
+
+<%- include ('../partials/header.ejs') %>
+
+<div class="LoginForm">
+   <form action="/authenticate" method="POST" class="loginform">
+     <h1 class="heading">Login</h1>
+     <label for="username" class="head">Email:</label>
+     <input type="email" id="username" placeholder="Email" class="box" required name="email">
+     <label for="password" class="head">Password:</label>
+     <input type="password" id="password" name="password" placeholder="*******" required class="box">
+     <input type="submit" id="my-form-button" value="Login">
+     <div id="my-form-status" class="inf_status"></div>
+     <h3>Recuperar a senha <a href="/users/losepassword"><span>aqui</span></a></h3>
+   </form>
+   <h3>Novo cadastro <a href="/users/create"><span>aqui</span></a></h3>
+ </div>
+
+<% if (reset ) { %>
+   <script>
+       alert("O token de validação expirou. Faça o cadastro novamente.");
+   </script>
+<% } %>
+
+<% if (reviewcreate) { %>
+   <script>
+       alert("Verifique o seu email para finalizar o cadastro.");
+   </script>
+<% } %>
+
+<% if (userexist) { %>
+   <script>
+       alert("Usuario já existe, faça o login");
+   </script>
+<% } %>
+

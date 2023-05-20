@@ -1,0 +1,24 @@
+
+<%- include ('../partials/header.ejs') %>
+
+<section class="LoginForm" id="contact">
+    <a href="/login" class="logout"><h2>Retornar</h2></a>
+
+        <form action="/users/create" method="POST" class="loginform">
+            <h1 class="heading"> Cadastrar </h1>
+            <label for="password" class="head">Digite um email para cadastrar</label>
+            <input type="email"  name="email" placeholder="email@exemple.com" class="box" required>
+            <label for="password" class="head">Digite uma senha</label>
+            <input type="password"  name="password" placeholder="*******" class="box"><br>
+            <input type="submit" id="my-form-button" value="Criar">
+            <div id="my-form-status" class="inf_status"></div>
+        </form>
+    
+</section>
+
+<% if (expired) { %>
+    <script>
+        alert("O token de validação expirou. Por favor, faça o cadastro novamente.");
+    </script>
+<% } %>
+

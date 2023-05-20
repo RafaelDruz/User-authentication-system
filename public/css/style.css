@@ -1,0 +1,128 @@
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #353535, #3d10bb );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.LoginForm {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 400px;
+}
+.LoginForm .heading {
+  font-size: 30px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.LoginForm label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.LoginForm .head {
+  font-size: 15px;
+}
+.LoginForm .box {
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 2rem;
+  width: 100%;
+  background-color: #ffffff;
+}
+.LoginForm #my-form-button {
+  background-color: #21c726;
+  color: white;
+  cursor: pointer;
+  border: none;
+  width: 10rem;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 15px;
+}
+.LoginForm #my-form-button:hover {
+  background-color: #45a049;
+}
+.LoginForm .inf_status {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.LoginForm h3 {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.LoginForm a {
+  font-size: 1.5rem;
+  color: blue;
+  text-decoration: none;
+}
+.LoginForm .logout {
+  font-size: 1rem;
+  color: blue;
+  text-decoration: none;
+}
+.LoginForm .logOut {
+  text-align:  right;
+  font-size: 1.2rem;
+  color: rgb(226, 5, 5);
+  text-decoration: none;
+}
+.LoginForm a:hover {
+  text-decoration: underline;
+}
+
+.custontable .logoout {
+  font-size: 1rem;
+  color: blue;
+  text-decoration: none;
+}
+.custontable h2{
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
+} 
+.custontable  .table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem; 
+  border-collapse: collapse;
+} 
+.custontable .table th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #020202;
+}
+
+.custontable .table tr:hover {
+  background-color: #f5f5f5;
+}
+.custontable .table th {
+  text-align: center;
+  background-color: #8b8b8b;
+  color: rgb(255, 255, 255);
+}
+
